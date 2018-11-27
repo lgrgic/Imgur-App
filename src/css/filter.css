@@ -1,0 +1,37 @@
+.filter__wrapper {
+  position: fixed;
+  /*float: right;*/
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 20px 0;
+  z-index: 2;
+  background: #891b55;
+  /*border-bottom: 1px solid rgba(160, 160, 160, 0.2);*/
+  /*background: linear-gradient(to top, #fff, #efefef, #fff);*/
+}
+.logo {
+  float: left;
+  background: url(../img/ewing.jpg) center center no-repeat;
+  width: 100px;
+  height: 40px;
+  background-size: contain;
+}
+.load-image{
+  float: left;
+  background: url(../img/load.png) center center no-repeat;
+  width: 100px;
+  height: 100px;
+  background-size: contain;
+}
+.filter {
+  display: flex;
+  flex-flow: row nowrap;
+  color: #fff;
+}
+.filter__section:not(:last-child) {
+  margin-right: 10px;
+}
+.filter__section label {
+  margin-right: 10px;
+}
