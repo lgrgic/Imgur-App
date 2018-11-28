@@ -41,7 +41,7 @@
   opacity: 1;
 }
 .post__image-container:hover .post__image {
-  transform: scale(1.5);
+  transform: scale(1.1);
 }
 .post__title {
   padding: 30px 10px 10px 10px;
@@ -61,8 +61,8 @@
   flex-flow: row wrap;
   justify-content: space-between;
   padding: 0 10px;
-  color: orange;
-  font-weight: bold;
+  color: #891b55;
+
 }
 .post__image {
   display: block;

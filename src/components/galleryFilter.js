@@ -37,7 +37,7 @@ export const GalleryFilter = props => {
             </div>
             {topSelected && (
               <div className="filter__section">
-                <label htmlFor="section">Select time range:</label>
+                <label htmlFor="section">Time frame:</label>
                 <select
                   id="window"
                   name="window"
