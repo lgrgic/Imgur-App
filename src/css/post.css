@@ -6,9 +6,9 @@
   display: flex;
   flex-flow: column nowrap;
   height: 100%;
-  box-shadow: 5px 15px 10px #a1cadb;
-  border-radius: 2px;
+  box-shadow: 5px 15px 10px #245b72;
   position: relative;
+  border-radius: 8px;
   transition: transform 0.2s;
 }
 .post__container:active {
@@ -20,6 +20,7 @@
   text-decoration: none;
   color: #f8bc05;
   background-color: white;
+  border-radius: 8px;
 }
 /*.post__image-container:after {*/
   /*display: flex;*/
@@ -54,6 +55,7 @@
 .post__image-container {
   position: relative;
   overflow: hidden;
+  border-radius: 8px;
 }
 .post__statistic {
   margin-top: auto;

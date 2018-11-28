@@ -9,7 +9,7 @@ export const GalleryFilter = props => {
         <div className="row">
           <div className="filter col-md-12">
             <div className="filter__section">
-              <label htmlFor="section">Select section:</label>
+              <label htmlFor="section">Section:</label>
               <select
                 id="section"
                 name="section"

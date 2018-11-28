@@ -36,7 +36,7 @@ class GalleriesList extends Component {
   infinityScroll() {
     const {pageYOffset} = window;
     const {documentElement: {clientHeight, scrollHeight}} = document;
-    const {load, listEnd, page, currentPage, perPage} = this.state;
+    const {load, listEnd, currentPage, perPage} = this.state;
     const scrollTop = pageYOffset || document.documentElement.scrollTop;
     if (clientHeight + scrollTop >= scrollHeight && !load && listEnd) {
       this.props.changeFilter({page: ++this.state.page});
@@ -140,7 +140,7 @@ class GalleriesList extends Component {
         )}
         {this.state.load && (
           <div className="loader">
-            <h3 className="load-image"></h3>
+            <p className="load-image"></p>
           </div>
         )}
       </div>

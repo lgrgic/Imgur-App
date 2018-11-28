@@ -1,15 +1,9 @@
-import React, { Component } from 'react';
+import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import registerServiceWorker from './registerServiceWorker';
 
-
-
-//
-// import "./css/normalize.css";
-// import "./css/framework.css";
-// import "./css/app.css";
 
 ReactDOM.render(<App />, document.getElementById('root'));
 registerServiceWorker();

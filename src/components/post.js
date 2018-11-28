@@ -1,15 +1,14 @@
-import React, { Component } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
 
 import "../css/post.css";
 
 const Post = ({ post }) => (
 
-  <div className="col-md-3 col-xs-4 post">
+  <div className="col-md-4 col-xs-4 post">
     <Link className="post__link" to={`gallery/${post.id}`}>
       <div className="post__container">
         <div className="post__image-container">
-{/*<div>{console.log(post.link)}</div>*/}
           <img
             className="post__image"
             src={
@@ -17,21 +16,8 @@ const Post = ({ post }) => (
                 ? `http://i.imgur.com/${post.cover}b.jpg`
                 : `http://i.imgur.com/${post.id}b.jpg`
             }
+            alt="Imgur post"
           />
-
-          {/*<div className="post__image">*/}
-              {/*{(post.images &&*/}
-                  {/*post.images[0].animated && (*/}
-                      {/*<video preload="auto" autoPlay="autoplay" loop="loop" height="250px" width="250px">*/}
-                        {/*<source src={post.images[0].mp4} type="video/mp4" />*/}
-                      {/*</video>*/}
-                  {/*)) ||*/}
-
-              {/*(post.images && (*/}
-                  {/*<img src={post.images[0].link} alt={post.title} height="250px" width="250px"/>*/}
-              {/*)) || <img src={post.link} alt={post.title} height="250px" width="250px"/>}*/}
-          {/*</div>*/}
-
         </div>
         <div className="post__info">
           <p className="post__title">{post.title}</p>
@@ -40,7 +26,6 @@ const Post = ({ post }) => (
               <p>{post.points} points</p>
             </div>
         </div>
-
       </div>
     </Link>
   </div>

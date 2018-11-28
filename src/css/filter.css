@@ -35,3 +35,6 @@
 .filter__section label {
   margin-right: 10px;
 }
+.filter__section #sort, #section, #window {
+  border-color: #891b55;
+}

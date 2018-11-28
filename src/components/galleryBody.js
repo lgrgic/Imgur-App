@@ -10,8 +10,6 @@ export const GalleryBody = props => {
           return (
             <div key={image.id} className="gallery-body__image-container">
               <div className="gallery-body__image-wrapper">
-                {/*<img className="gallery-body__image" src={image.link} />*/}
-                {/*<video className="gallery-body__image" src={image.link} preload="auto" autoPlay="autoplay"/>*/}
                 {(gallery.images &&
                   gallery.images[0].animated && (
                     <video preload="auto" autoPlay="autoplay" loop="loop" className="gallery-body__image">
@@ -30,7 +28,7 @@ export const GalleryBody = props => {
         })
       ) : (
         <div className="gallery-body__image-wrapper">
-          <img className="gallery-body__image" src={gallery.link} />
+          <img className="gallery-body__image" src={gallery.link} alt="Imgur post"/>
         </div>
       )}
       {gallery.description && (
