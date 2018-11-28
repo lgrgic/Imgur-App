@@ -9,12 +9,14 @@ import Container from "./components/mainLayout.js";
 import GalleriesList from "./components/galleriesList";
 import GalleryView from "./components/galleryView.js";
 import ButtonUp from "./components/buttonUp.js";
+import Footer from './components/footer.js';
 import reducers from "./reducers";
 
 import "./css/normalize.css";
 import "./css/framework.css";
 import "./css/app.css";
 import './App.css';
+import './css/footer.css';
 
 const store = createStore(
   reducers,
@@ -28,6 +30,7 @@ class App extends Component {
         <Provider store={store}>
           <Router>
             <Container>
+              <Footer />
               <ButtonUp/>
               <Route exact path="/" component={GalleriesList}/>
               <Route path="/gallery/:galleryId" component={GalleryView}/>

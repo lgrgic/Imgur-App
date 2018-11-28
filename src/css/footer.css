@@ -1,0 +1,14 @@
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
+  opacity: 1;
+  font-size: 13px;
+  background-color: #a1dff433;
+}
+p {
+  padding-left: 10px;
+  color: #891b55;
+}

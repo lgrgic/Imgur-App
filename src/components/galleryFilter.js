@@ -9,7 +9,6 @@ export const GalleryFilter = props => {
         <div className="row">
           <div className="filter col-md-12">
             <div className="filter__section">
-              <label htmlFor="section">Section:</label>
               <select
                 id="section"
                 name="section"
@@ -22,7 +21,6 @@ export const GalleryFilter = props => {
               </select>
             </div>
             <div className="filter__section">
-              <label htmlFor="sort">Sort by:</label>
               <select
                 id="sort"
                 name="sort"
@@ -32,12 +30,10 @@ export const GalleryFilter = props => {
                 <option value="viral">Viral</option>
                 <option value="top">Top</option>
                 <option value="time">Time</option>
-                {userSelected && <option value="rising">Rising</option>}
+                <option value="rising">Rising</option>
               </select>
             </div>
-            {topSelected && (
               <div className="filter__section">
-                <label htmlFor="section">Time frame:</label>
                 <select
                   id="window"
                   name="window"
@@ -51,7 +47,6 @@ export const GalleryFilter = props => {
                   <option value="all">All</option>
                 </select>
               </div>
-            )}
           </div>
         </div>
       </div>

@@ -4,7 +4,7 @@
   top: 0;
   left: 0;
   right: 0;
-  padding: 20px 0;
+  padding-top: 10px;
   z-index: 2;
   background: #891b55;
   /*border-bottom: 1px solid rgba(160, 160, 160, 0.2);*/
@@ -13,7 +13,7 @@
 .logo {
   float: left;
   background: url(../img/ewing.jpg) center center no-repeat;
-  width: 100px;
+  width: 60px;
   height: 40px;
   background-size: contain;
 }
@@ -35,6 +35,38 @@
 .filter__section label {
   margin-right: 10px;
 }
-.filter__section #sort, #section, #window {
-  border-color: #891b55;
+.filter__section select {
+  background-color: #b07292;
+  color: #fff;
+  font-size: inherit;
+  font-style: oblique;
+  padding: 0.5em;
+  padding-right: 0.5em;
+  border: 0;
+  margin: 0;
+  border-radius: 3px;
+  text-indent: 0.01px;
+  text-overflow: '';
+  -webkit-appearance: button; /* hide default arrow in chrome OSX */
+}
+.filter__section:hover #section {
+  cursor: pointer;
+  transition-duration: 0.3s;
+  background-color: #eaeaea;
+  color: #891b55;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.filter__section:hover #sort {
+  cursor: pointer;
+  transition-duration: 0.3s;
+  background-color: #eaeaea;
+  color: #891b55;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.filter__section:hover #window {
+  cursor: pointer;
+  transition-duration: 0.3s;
+  background-color: #eaeaea;
+  color: #891b55;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
