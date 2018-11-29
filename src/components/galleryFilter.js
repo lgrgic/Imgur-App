@@ -1,7 +1,7 @@
 import React from "react";
 import "../css/filter.css";
 export const GalleryFilter = props => {
-  const { onFilterChange, userSelected, topSelected, filterOptions } = props;
+  const { onFilterChange, filterOptions } = props;
   return (
     <div className="filter__wrapper">
       <div className="logo"></div>
@@ -9,6 +9,7 @@ export const GalleryFilter = props => {
         <div className="row">
           <div className="filter col-md-12">
             <div className="filter__section">
+            {/* First filter menu. */}
               <select
                 id="section"
                 name="section"
@@ -20,6 +21,7 @@ export const GalleryFilter = props => {
                 <option value="user">User</option>
               </select>
             </div>
+            {/* Second filter menu. */}
             <div className="filter__section">
               <select
                 id="sort"
@@ -33,20 +35,21 @@ export const GalleryFilter = props => {
                 <option value="rising">Rising</option>
               </select>
             </div>
-              <div className="filter__section">
-                <select
-                  id="window"
-                  name="window"
-                  onChange={e => onFilterChange(e)}
-                  defaultValue={filterOptions.window}
-                >
-                  <option value="day">Day</option>
-                  <option value="week">Week</option>
-                  <option value="month">Month</option>
-                  <option value="year">Year</option>
-                  <option value="all">All</option>
-                </select>
-              </div>
+            {/* Third fitler menu (time frame). */}
+            <div className="filter__section">
+              <select
+                id="window"
+                name="window"
+                onChange={e => onFilterChange(e)}
+                defaultValue={filterOptions.window}
+              >
+                <option value="day">Day</option>
+                <option value="week">Week</option>
+                <option value="month">Month</option>
+                <option value="year">Year</option>
+                <option value="all">All</option>
+              </select>
+            </div>
           </div>
         </div>
       </div>

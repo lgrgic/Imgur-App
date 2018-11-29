@@ -1,11 +1,12 @@
 import React, { Component } from "react";
-import top from "../img/top.png";
+import Top from "../img/top.png";
 import "../css/buttonTop.css";
 
 export default class ButtonUp extends Component {
   componentDidMount() {
     window.addEventListener("scroll", this.showButton.bind(this), false);
   }
+  /* Adds/removes a scroll back to top button on scroll. */
   showButton() {
     const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
     if (scrollTop > 300) {
@@ -14,6 +15,7 @@ export default class ButtonUp extends Component {
       this.buttonTop.classList.remove("buttonTop_show");
     }
   }
+  /* Handles onClick event. Scrolls back to the top. */
   handleUp() {
     const t = setInterval(up, 10);
     function up() {
@@ -26,6 +28,7 @@ export default class ButtonUp extends Component {
       return false;
     }
   }
+  /* Renders scroll to top button. */
   render() {
     return (
       <div
@@ -36,7 +39,7 @@ export default class ButtonUp extends Component {
         }}
       >
       <img
-        src={top}
+        src={Top}
         alt="TOP"
       />
       </div>

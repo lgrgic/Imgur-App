@@ -6,7 +6,7 @@ export default class Footer extends Component {
       <footer className="navbar-fixed-bottom">
 				<p>
           2018 Luka Grgic |
-          <a href="http://lukagrgic.com" target="_blank"> lukagrgic.com</a>
+          <a href="http://lukagrgic.com" target="_blank" rel="noopener noreferrer"> lukagrgic.com</a>
         </p>
 			</footer>
     )

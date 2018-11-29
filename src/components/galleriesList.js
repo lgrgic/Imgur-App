@@ -32,7 +32,7 @@ class GalleriesList extends Component {
   componentWillUnmount() {
     window.removeEventListener("scroll", this.infinityScroll);
   }
-
+  
   infinityScroll() {
     const {pageYOffset} = window;
     const {documentElement: {clientHeight, scrollHeight}} = document;

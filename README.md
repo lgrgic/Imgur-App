@@ -1,4 +1,13 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A simple Imgur Browsing App
+
+# Features
+
+  - images in a grid of thumbnails;
+  - image description in the thumbnail;
+  - sections: hot, top, user;
+  - include / exclude viral images;
+  - window and sort parameters;
+  - show image details: big image, title, description, upvotes, downvotes and score.
 
 In the project directory, you can run:
 

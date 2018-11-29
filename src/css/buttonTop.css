@@ -1,8 +1,8 @@
 .buttonTop {
   position: fixed;
   display: inline-block;
-  right: 30px;
-  bottom: 30px;
+  right: 10px;
+  bottom: 10px;
   padding: 15px;
   cursor: pointer;
   font-size: 14px;
